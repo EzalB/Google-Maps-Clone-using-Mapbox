@@ -12,22 +12,37 @@
   <link rel="stylesheet"
     href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
     type="text/css" />
-  <title>Google Maps Clone</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Google Maps Clone using Mapbox</title>
+  <script src="script.js" defer></script>
   <style>
-    body {
-      margin: 0;
+    #toggler {
+      position: relative;
+      z-index: 70;
+      margin-top: 10%;
+      margin-left: 0.7%;
+      border: 2px solid #52b788;
+      border-radius: 20px;
+      padding: 10px;
+      min-width: 60px;
+      font-size: 12px;
+      background-color: #edf6f9;
+      color: #415a77;
+      font-weight: 600;
     }
 
-    #map {
-      height: 100vh;
-      width: 100vw;
+    #toggler:hover {
+      transform: perspective(300px) scale(0.97);
+      box-shadow: inset -0.316666666666667vw -0.316666666666667vw 0.95vw -0.158333333333333vw #f6f8fa, inset 0.316666666666667vw 0.316666666666667vw 0.633333333333333vw #c2ccdb;
     }
+
   </style>
-  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <div id='map'></div>
+  <div id="map">
+    <button id="toggler" onclick="myFunction()">Switch Theme</button>
+  </div>
 </body>
 
 </html>

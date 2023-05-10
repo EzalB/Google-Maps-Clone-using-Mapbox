@@ -30,3 +30,8 @@ function setupMap(center) {
 
   map.addControl(directions, "top-left")
 }
+
+function myFunction() {
+   var element = document.getElementById("map");
+   element.classList.toggle("dark-mode");
+}
